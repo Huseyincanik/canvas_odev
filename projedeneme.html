@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOŞ</title>
+    <style>
+    body{
+        background-color: rgb(238, 247, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    #oyun{
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    #bitti{
+        background-color: rgb(238, 247, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div{
+        max-width: 500px;
+    height: 100px;
+    background-color: powderblue;
+    padding: 10px;
+    }
+    
+    
+
+</style>
+</head>
+<body>
+    <button id="oyun" onclick="document.location.reload()">Yeni Oyun</button>
+    
+    <div id="aciklama">
+        <ul>
+            <li>-Ateşten uzak dur</li>
+            <li>-Biftek bir puan</li>
+            <li>-Omlet 2 puan</li>
+            <li>-Boşluk tuşu ile oynanır</li>
+            <li>-Oyun bitince eşyalar sizden uzaklaşır</li>
+        </ul>
+    </div>
+    <p id="bitti"></p>
+    <canvas id="canvas" height="600" width="800"></canvas>
+    <script src="projedeneme.js"></script>
+</body>
+</html>
